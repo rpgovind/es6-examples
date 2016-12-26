@@ -9,6 +9,6 @@ export default class Person{
        return  this.firstname + ' ' + this.lastname;
    }
    sayfullName(){
-       console.log(`firstname :${this.firstname} lastname :${this.lastname} age: ${this.age}`);
+       return (`FirstName : ${this.firstname} , LastName : ${this.lastname} , Age: ${this.age}`);
    }
 }
