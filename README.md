@@ -1,5 +1,7 @@
 #ECMA Script 2015 (ES 6)
 
-## Install transpiler babel https://babeljs.io/)
+## Install transpiler babel (https://babeljs.io/)
 
--babel -w app-es6.js -o app-es5.js
+* watch source code folder
+    - babel -w es6 -d es5
+    - babel -w app-es6.js -o app-es5.js
