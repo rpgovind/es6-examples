@@ -1,34 +1,17 @@
-class Drone {
+import {
+    Car
+} from './car.js';
+import Drone from './drone.js';
 
-    //constructor
-    constructor(id, name){
-        this._id = id;
-        this.name = name;
-        console.log('in Drone constructor' , Drone. Maxheight);
-    }
 
-    fly() {
-        console.log('Drone ' + this.id + 'is flying');
-    }
-    static getCompany() {
-        //can access static property
-        console.log('getCompany ' + this.Maxheight);
-    }
-
-    //getters and settters
-    get id() {
-        return this._id;
-    }
-
-    set id(value) {
-        this._id =  value;
-    }
-}
- //static properties
- Drone.Maxheight = 2000;
- Drone.getCompany();
-let drone = new Drone('a123', 'George');
+let car = new Car('Honda');
+let drone = new Drone('a1000', 'New one for test');
 drone.fly();
+Drone.getCompany();
+//using setters to change Id
+drone.id = 'a1001';
+console.log(drone);
 
-drone.id  ='a1000';
-console.log(drone._id + ' ' +drone.id);
+//invoking static method in child class and base class
+Car.getCompany();
+Drone.getCompany();
