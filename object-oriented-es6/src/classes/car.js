@@ -1,8 +1,10 @@
 import { Vehicle } from './vehicle.js';
 class Car extends Vehicle{
-    constructor(name){
+    constructor(license, model, latlong){
         console.log('constructor in car.js');
-        super('LICE - ' + name);
+        super(license, model, latlong);
+        this.miles =  null;
+        this.make = null;
     }
 }
 // Using named exports

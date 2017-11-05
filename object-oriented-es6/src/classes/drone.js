@@ -4,16 +4,15 @@ import {
 
 class Drone extends Vehicle {
     //constructor
-    constructor(id, name) {
+    constructor(license, model, latlong) {
         console.log('in Drone constructor', Drone.Maxheight);
-        super('LICE - ' + name);
-        this.gpsEnabled = false;
-        this._id = id;
-        this.name = name;
+       super(license, model, latlong);
+       this.airTimehours = null;
+       this.base = null;
     }
 
     fly() {
-        console.log('Drone ' + this._id + 'is flying');
+        // console.log('Drone ' + this. + 'is flying');
     }
     static getCompany() {
         //can access static property
